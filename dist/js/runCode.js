@@ -5,7 +5,7 @@ let code;
 const runCodeButton = document.querySelector(".bg-green-500");
 runCodeButton.addEventListener("click", () => {
   // Get the code from the textarea
-  code = document.getElementById("textareaCode").value;
+  code = document.getElementById("codeEditorTextArea").value;
 
   RunCode();
 });
@@ -19,6 +19,6 @@ function RunCode() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  code = document.getElementById("textareaCode").value;
+  code = document.getElementById("codeEditorTextArea").value;
   RunCode();
 });

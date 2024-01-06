@@ -21,7 +21,7 @@ function closeSaveCodeModal() {
 // Function to save code to the JSON file
 async function saveCode() {
   const codeSnippetName = codeSnippetNameInput.value;
-  const codeSnippet = document.getElementById("textareaCode").value;
+  const codeSnippet = document.getElementById("codeEditorTextArea").value;
 
   try {
     const response = await fetch("php/saveCode.php", {
@@ -34,7 +34,7 @@ async function saveCode() {
       )}&codeSnippet=${encodeURIComponent(codeSnippet)}`,
     });
 
-    const responseData = await response.text(); // Use text() instead of json()
+    const responseData = await response.text();
 
     console.log("Server response:", responseData);
 

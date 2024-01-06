@@ -143,7 +143,7 @@
         class="flex-grow p-2 dark:shadow-gray-700 lg:mb-0"
       >
         <textarea
-          id="textareaCode"
+          id="codeEditorTextArea"
           class="resize-none w-full h-full p-4 border border-gray-300 bg-white dark:bg-zinc-800 dark:text-white"
         >
 <!DOCTYPE html>

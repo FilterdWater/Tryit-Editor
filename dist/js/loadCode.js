@@ -46,8 +46,16 @@ async function populateDropdown() {
 async function loadCode() {
   const selectedSnippetName = codeSnippetDropdown.value;
   const selectedCode = await getSavedCodeSnippet(selectedSnippetName);
-  document.getElementById("textareaCode").value = selectedCode;
+  const codeEditorTextArea = document.getElementById("codeEditorTextArea");
+  codeEditorTextArea.value = decodeEntities(selectedCode);
   closeLoadCodeModal();
+}
+
+// Function to decode HTML entities
+function decodeEntities(encodedString) {
+  const textArea = document.createElement("textarea");
+  textArea.innerHTML = encodedString;
+  return textArea.value;
 }
 
 // Function to get saved code snippet from the JSON file
