@@ -36,22 +36,22 @@ async function saveCode() {
 
     const responseData = await response.text();
 
-    console.log("Server response:", responseData);
+    // console.log("Server response:", responseData); used for debuging
 
     try {
       const data = JSON.parse(responseData);
 
       if (data.status === "success") {
-        console.log("Code saved successfully!");
+        alert("Code saved successfully!");
       } else {
-        console.error("Error saving code:", data.message);
+        alert("Error saving code:", data.message);
       }
 
       closeSaveCodeModal();
     } catch (error) {
-      console.error("Error parsing JSON:", error);
+      alert("Error parsing JSON:", error);
     }
   } catch (error) {
-    console.error("Error saving code:", error);
+    alert("Error saving code:", error);
   }
 }

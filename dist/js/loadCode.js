@@ -35,10 +35,10 @@ async function populateDropdown() {
         codeSnippetDropdown.add(option);
       });
     } else {
-      console.error("JSON data is empty or undefined.");
+      alert("JSON file is empty.");
     }
   } catch (error) {
-    console.error("Error fetching or parsing JSON file:", error);
+    alert("Error fetching or parsing JSON file:", error);
   }
 }
 
@@ -71,11 +71,11 @@ async function getSavedCodeSnippet(codeSnippetName) {
     if (selectedSnippet) {
       return selectedSnippet.code;
     } else {
-      console.error("Code snippet not found in the existing JSON file.");
+      alert("Code snippet not found in the JSON file.");
       return "";
     }
   } catch (error) {
-    console.error("Error fetching or parsing JSON file:", error);
+    alert("Error fetching or parsing JSON file:", error);
     return "";
   }
 }
