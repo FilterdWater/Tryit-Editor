@@ -1,8 +1,6 @@
 <?php
 
 header('Content-Type: application/json');
-header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
-header('Pragma: no-cache');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     saveCodeSnippet();
@@ -24,7 +22,7 @@ function saveCodeSnippet() {
         // Prepare new snippet
         $newSnippet = [
             'name' => $codeSnippetName,
-            'code' => htmlentities($codeSnippet), // Encode HTML content
+            'code' => htmlentities($codeSnippet), // Encode HTML Symbols
         ];
 
         // Update or add snippet

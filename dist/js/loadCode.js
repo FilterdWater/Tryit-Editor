@@ -10,7 +10,6 @@ closeLoadModalButton.addEventListener("click", closeLoadCodeModal);
 
 // Function to open the Load Code modal
 async function openLoadCodeModal() {
-  // Populate the dropdown with code snippet names from the JSON file
   await populateDropdown();
   document.getElementById("LoadCodeModal").showModal();
 }
@@ -23,7 +22,7 @@ function closeLoadCodeModal() {
 // Function to populate the dropdown with code snippet names from the codeSnippets.JSON file
 async function populateDropdown() {
   try {
-    const response = await fetch(`codeSnippets.json`);
+    const response = await fetch("codeSnippets.json", { cache: "no-store" });
     const data = await response.json();
 
     codeSnippetDropdown.innerHTML = "";
@@ -54,7 +53,7 @@ async function loadCode() {
 // Function to get saved code snippet from the JSON file
 async function getSavedCodeSnippet(codeSnippetName) {
   try {
-    const response = await fetch("codeSnippets.json");
+    const response = await fetch("codeSnippets.json", { cache: "no-store" });
     const data = await response.json();
 
     const selectedSnippet = data.find(

@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tryit-Editor</title>
     <link rel="stylesheet" href="output.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/code-svgrepo-com.svg">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/code-svgrepo-com.svg"
+    />
   </head>
 
   <body class="font-sans bg-orange-100 dark:bg-gray-800 h-screen flex flex-col">
-    
-
-
     <!-- Buttons -->
     <div class="flex items-center justify-between mt-2 mx-2">
       <div class="flex items-center space-x-4">
         <button
           title="Load Code"
           id="LoadCodeButton"
-          class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white "
+          class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +39,7 @@
         <button
           title="Save Code"
           id="SaveCodeButton"
-          class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white "
+          class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +60,7 @@
         <button
           title="Change Orientation"
           onclick="changeOrientation()"
-          class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white "
+          class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -127,15 +128,13 @@
         </div>
         <button
           title="Run Code"
-          class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600  font-bold"
+          class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 font-bold"
         >
           Run Code ❯
         </button>
       </div>
     </div>
     <!-- End of Buttons -->
-
-
 
     <!-- Code Editor Section -->
     <div id="ContainersContainer" class="flex flex-col flex-1">
@@ -166,10 +165,9 @@
     </div>
   </body>
 </html>
-<!-- Press Run Code To See Results --></textarea>
+<!-- Press Run Code To See Results --></textarea
+        >
       </div>
-
-
 
       <!-- Result Section -->
       <div id="resultContainer" class="flex-grow p-2 dark:shadow-gray-700">
@@ -181,20 +179,47 @@
       </div>
     </div>
 
-
     <!-- Buttons Modals -->
     <dialog id="LoadCodeModal" class="bg-white p-6 rounded-md shadow-md">
       <h1 class="mb-4">Load Code</h1>
-      <select id="codeSnippetDropdown" class="p-2 outline rounded mb-4"></select>
-      <button id="LoadCodeButtonModal" class="bg-green-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md">Load Code</button>
-      <button id="closeLoadModalButton" class="bg-red-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md">Cancel</button>
+      <select
+        id="codeSnippetDropdown"
+        class="p-2 outline rounded mb-4"
+      ></select>
+      <button
+        id="LoadCodeButtonModal"
+        class="bg-green-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md"
+      >
+        Load Code
+      </button>
+      <button
+        id="closeLoadModalButton"
+        class="bg-red-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md"
+      >
+        Cancel
+      </button>
     </dialog>
 
     <dialog id="SaveCodeModal" class="bg-white p-6 rounded-md shadow-md">
       <h1 class="mb-4">Save Code</h1>
-      <input type="text" id="codeSnippetName" placeholder="Enter code Snippet name" class="p-2 outline rounded mb-4" />
-      <button id="SaveCodeButtonModal" class="bg-green-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md">Save Code</button>
-      <button id="closeSaveModalButton" class="bg-red-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md">Cancel</button>
+      <input
+        type="text"
+        id="codeSnippetName"
+        placeholder="Enter code Snippet name"
+        class="p-2 outline rounded mb-4"
+      />
+      <button
+        id="SaveCodeButtonModal"
+        class="bg-green-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md"
+      >
+        Save Code
+      </button>
+      <button
+        id="closeSaveModalButton"
+        class="bg-red-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md"
+      >
+        Cancel
+      </button>
     </dialog>
 
     <script src="./js/runCode.js"></script>
