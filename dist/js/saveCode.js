@@ -36,8 +36,6 @@ async function saveCode() {
 
     const responseData = await response.text();
 
-    // console.log("Server response:", responseData); used for debuging
-
     try {
       const data = JSON.parse(responseData);
 
