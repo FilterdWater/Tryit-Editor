@@ -137,7 +137,7 @@
     <!-- End of Buttons -->
 
     <!-- Code Editor Section -->
-    <div id="ContainersContainer" class="flex flex-col flex-1">
+    <div id="ContainersContainer" class="flex flex-row flex-1">
       <div
         id="editorContainer"
         class="flex-grow p-2 dark:shadow-gray-700 lg:mb-0"
