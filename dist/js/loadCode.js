@@ -49,6 +49,7 @@ async function loadCode() {
   const codeEditorTextArea = document.getElementById("codeEditorTextArea");
   codeEditorTextArea.value = decodeEntities(selectedCode);
   closeLoadCodeModal();
+  RunCode();
 }
 
 //  to decode HTML entities

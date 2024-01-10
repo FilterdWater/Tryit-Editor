@@ -11,7 +11,8 @@ runCodeButton.addEventListener("click", () => {
 });
 
 function RunCode() {
-  // Update the content of the iframe with the code
+  // Update the content of the file within the iframe with the code
+  code = document.getElementById("codeEditorTextArea").value;
   const iframe = document.getElementById("Coderesult");
   iframe.contentDocument.open();
   iframe.contentDocument.write(code);

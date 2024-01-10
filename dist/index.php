@@ -222,10 +222,10 @@
       </button>
     </dialog>
 
-    <script src="./js/runCode.js"></script>
     <script src="./js/theme.js"></script>
-    <script src="./js/changeOrientation.js"></script>
+    <script src="./js/runCode.js"></script>
     <script src="./js/saveCode.js"></script>
     <script src="./js/loadCode.js"></script>
+    <script src="./js/changeOrientation.js"></script>
   </body>
 </html>
