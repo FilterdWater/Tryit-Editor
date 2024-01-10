@@ -32,7 +32,9 @@ async function saveCode() {
       body: `codeSnippetName=${encodeURIComponent(
         codeSnippetName
       )}&codeSnippet=${encodeURIComponent(codeSnippet)}`,
-    });
+    }); // encodeURIComponent doet niks specials in deze applicatie
+    // Ik heb het erbij gedaan omdat ik het misschien later pas nodig heb en dan kan ik het makkelijk vinden
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
 
     const responseData = await response.text();
 
