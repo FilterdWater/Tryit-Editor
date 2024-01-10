@@ -8,17 +8,17 @@ saveCodeButton.addEventListener("click", openSaveCodeModal);
 saveCodeButtonModal.addEventListener("click", saveCode);
 closeSaveModalButton.addEventListener("click", closeSaveCodeModal);
 
-// Function to open the Save Code modal
+//  to open the Save Code modal
 function openSaveCodeModal() {
   document.getElementById("SaveCodeModal").showModal();
 }
 
-// Function to close the Save Code modal
+//  to close the Save Code modal
 function closeSaveCodeModal() {
   document.getElementById("SaveCodeModal").close();
 }
 
-// Function to save code to the JSON file
+//  to save code to the JSON file
 async function saveCode() {
   const codeSnippetName = codeSnippetNameInput.value.trim().replace(" ", "-");
   const codeSnippet = document.getElementById("codeEditorTextArea").value;
