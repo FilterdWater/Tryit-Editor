@@ -732,8 +732,17 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .outline {
   outline-style: solid;
+}
+
+.outline-1 {
+  outline-width: 1px;
 }
 
 .ring-black {
@@ -757,6 +766,22 @@ video {
 .hover\:text-gray-800:hover {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.focus\:outline-8:focus {
+  outline-width: 8px;
+}
+
+.focus\:outline-1:focus {
+  outline-width: 1px;
+}
+
+.focus\:outline-4:focus {
+  outline-width: 4px;
+}
+
+.focus\:outline-2:focus {
+  outline-width: 2px;
 }
 
 .focus\:ring:focus {

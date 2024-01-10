@@ -184,17 +184,17 @@
       <h1 class="mb-4">Load Code</h1>
       <select
         id="codeSnippetDropdown"
-        class="p-2 outline rounded mb-4"
+        class="p-2 outline outline-1 rounded mb-4 focus:outline-2"
       ></select>
       <button
         id="LoadCodeButtonModal"
-        class="bg-green-500 transition  focus:ring ring-black text-white px-4 py-2 rounded-md"
+        class="bg-green-500 transition text-white px-4 py-2 rounded-md"
       >
         Load Code
       </button>
       <button
         id="closeLoadModalButton"
-        class="bg-red-500 transition  focus:ring ring-black text-white px-4 py-2 rounded-md"
+        class="bg-red-500 transition text-white px-4 py-2 rounded-md"
       >
         Cancel
       </button>
@@ -206,17 +206,17 @@
         type="text"
         id="codeSnippetName"
         placeholder="Enter code Snippet name"
-        class="p-2 outline rounded mb-4"
+        class="p-2 outline outline-1 rounded mb-4 focus:outline-2"
       />
       <button
         id="SaveCodeButtonModal"
-        class="bg-green-500 transition  focus:ring ring-black text-white px-4 py-2 rounded-md"
+        class="bg-green-500 transition text-white px-4 py-2 rounded-md"
       >
         Save Code
       </button>
       <button
         id="closeSaveModalButton"
-        class="bg-red-500 transition  focus:ring ring-black text-white px-4 py-2 rounded-md"
+        class="bg-red-500 transition text-white px-4 py-2 rounded-md"
       >
         Cancel
       </button>
