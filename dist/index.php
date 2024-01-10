@@ -188,13 +188,13 @@
       ></select>
       <button
         id="LoadCodeButtonModal"
-        class="bg-green-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md"
+        class="bg-green-500 transition  focus:ring ring-black text-white px-4 py-2 rounded-md"
       >
         Load Code
       </button>
       <button
         id="closeLoadModalButton"
-        class="bg-red-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md"
+        class="bg-red-500 transition  focus:ring ring-black text-white px-4 py-2 rounded-md"
       >
         Cancel
       </button>
@@ -210,13 +210,13 @@
       />
       <button
         id="SaveCodeButtonModal"
-        class="bg-green-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md"
+        class="bg-green-500 transition  focus:ring ring-black text-white px-4 py-2 rounded-md"
       >
         Save Code
       </button>
       <button
         id="closeSaveModalButton"
-        class="bg-red-500 transition focus:outline-none focus:ring ring-black text-white px-4 py-2 rounded-md"
+        class="bg-red-500 transition  focus:ring ring-black text-white px-4 py-2 rounded-md"
       >
         Cancel
       </button>
