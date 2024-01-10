@@ -4,9 +4,6 @@ let code;
 // JavaScript for handling the "Run Code" button
 const runCodeButton = document.querySelector(".bg-green-500");
 runCodeButton.addEventListener("click", () => {
-  // Get the code from the textarea
-  code = document.getElementById("codeEditorTextArea").value;
-
   RunCode();
 });
 

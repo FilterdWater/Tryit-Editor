@@ -1,10 +1,1 @@
-[
-    {
-        "name": "Html-Document",
-        "code": "&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en&quot;&gt;\n  &lt;head&gt;\n    \n    &lt;meta charset=&quot;UTF-8&quot; \/&gt;\n    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; \/&gt;\n    &lt;title&gt;Example Title&lt;\/title&gt;\n\n    &lt;style&gt;\n      body {background-color: gray;}\n    &lt;\/style&gt;\n\n  &lt;\/head&gt;\n  &lt;body&gt;\n    &lt;div&gt;\n      Example Html Document\n    &lt;\/div&gt;\n  &lt;\/body&gt;\n&lt;\/html&gt;\n&lt;!-- Press Run Code To See Results --&gt;"
-    },
-    {
-        "name": "Html-Document blue",
-        "code": "&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en&quot;&gt;\n  &lt;head&gt;\n    \n    &lt;meta charset=&quot;UTF-8&quot; \/&gt;\n    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; \/&gt;\n    &lt;title&gt;Example Title&lt;\/title&gt;\n\n    &lt;style&gt;\n      body {background-color: blue;}\n    &lt;\/style&gt;\n\n  &lt;\/head&gt;\n  &lt;body&gt;\n    &lt;div&gt;\n      Example Html Document\n    &lt;\/div&gt;\n  &lt;\/body&gt;\n&lt;\/html&gt;\n&lt;!-- Press Run Code To See Results --&gt;"
-    }
-]
+[]
