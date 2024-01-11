@@ -13,7 +13,7 @@ function saveCodeSnippet() {
 
         $jsonFile = '../codeSnippets.json';
 
-        // Read existing data
+        // Get existing data
         $data = json_decode(file_get_contents($jsonFile), true);
 
         // Find existing snippet index

@@ -8,18 +8,18 @@ loadCodeButton.addEventListener("click", openLoadCodeModal);
 loadCodeButtonModal.addEventListener("click", loadCode);
 closeLoadModalButton.addEventListener("click", closeLoadCodeModal);
 
-//  to open the Load Code modal
+// open the Load Code modal
 async function openLoadCodeModal() {
   await populateDropdown();
   document.getElementById("LoadCodeModal").showModal();
 }
 
-//  to close the Load Code modal
+// close the Load Code modal
 function closeLoadCodeModal() {
   document.getElementById("LoadCodeModal").close();
 }
 
-//  to populate the dropdown with code snippet names from the codeSnippets.JSON file
+// populate the dropdown with code snippet names from the codeSnippets.JSON file
 async function populateDropdown() {
   try {
     const response = await fetch("codeSnippets.json", { cache: "no-store" });
@@ -42,7 +42,7 @@ async function populateDropdown() {
   }
 }
 
-//  to load code into the textarea based on the selected dropdown item
+// load code into the textarea based on the selected dropdown item
 async function loadCode() {
   const selectedSnippetName = codeSnippetDropdown.value;
   const selectedCode = await getSavedCodeSnippet(selectedSnippetName);
@@ -52,14 +52,14 @@ async function loadCode() {
   RunCode();
 }
 
-//  to decode HTML entities
+// decode HTML entities
 function decodeEntities(encodedString) {
   const textArea = document.createElement("textarea");
   textArea.innerHTML = encodedString;
   return textArea.value;
 }
 
-//  to get saved code snippet from the JSON file
+// get saved code snippet from the JSON file
 async function getSavedCodeSnippet(codeSnippetName) {
   try {
     const response = await fetch("codeSnippets.json", { cache: "no-store" });

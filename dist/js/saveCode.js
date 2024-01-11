@@ -8,17 +8,17 @@ saveCodeButton.addEventListener("click", openSaveCodeModal);
 saveCodeButtonModal.addEventListener("click", saveCode);
 closeSaveModalButton.addEventListener("click", closeSaveCodeModal);
 
-//  to open the Save Code modal
+// open the Save Code modal
 function openSaveCodeModal() {
   document.getElementById("SaveCodeModal").showModal();
 }
 
-//  to close the Save Code modal
+// close the Save Code modal
 function closeSaveCodeModal() {
   document.getElementById("SaveCodeModal").close();
 }
 
-//  to save code to the JSON file
+// save code to the JSON file
 async function saveCode() {
   const codeSnippetName = codeSnippetNameInput.value.trim().replace(" ", "-");
   const codeSnippet = document.getElementById("codeEditorTextArea").value;
@@ -32,7 +32,7 @@ async function saveCode() {
       body: `codeSnippetName=${encodeURIComponent(
         codeSnippetName
       )}&codeSnippet=${encodeURIComponent(codeSnippet)}`,
-    }); // encodeURIComponent doet niks specials in deze applicatie
+    }); // encodeURIComponent doet niks specials in deze applicatie want de code word all in de php code ge encode
     // Ik heb het erbij gedaan omdat ik het misschien later pas nodig heb en dan kan ik het makkelijk vinden
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
 
