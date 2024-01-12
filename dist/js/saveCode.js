@@ -20,7 +20,7 @@ function closeSaveCodeModal() {
 
 // save code to the JSON file
 async function saveCode() {
-  const codeSnippetName = codeSnippetNameInput.value.trim().replace(" ", "-");
+  const codeSnippetName = codeSnippetNameInput.value.trim().replace(/ /g, "-");
   const codeSnippet = document.getElementById("codeEditorTextArea").value;
 
   try {
